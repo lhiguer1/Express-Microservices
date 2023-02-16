@@ -3,7 +3,7 @@ const path = require('path');
 var router = express.Router();
 
 
-router.use('/static/timestamp/css', express.static(path.join(__dirname,'static', 'timestamp', 'css')));
+router.use('/static/css', express.static(path.join(__dirname,'static', 'css')));
 
 /* GET users listing. */
 router.get('/', (req, res) => {

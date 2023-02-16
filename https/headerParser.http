@@ -1,0 +1,8 @@
+@baseUrl = http://localhost:3000/api/whoami
+
+### Provide language
+GET {{baseUrl}} HTTP/1.1
+Accept-Language: en-US,en;q=0.5
+
+### Without "Accepte-Language", language will equal ""
+GET {{baseUrl}} HTTP/1.1
