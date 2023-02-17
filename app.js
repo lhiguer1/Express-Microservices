@@ -5,6 +5,7 @@ var cors = require('cors');
 
 var timestampRouter = require('./timestamp');
 var headerParserRouter = require('./headerparser');
+var urlShortenerRouter = require('./urlshortener');
 
 var app = express();
 
@@ -15,7 +16,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/timestamp/', timestampRouter);
-app.use('/', headerParserRouter);
+app.use('/timestamp', timestampRouter);
+app.use('/headerparser', headerParserRouter);
+app.use('/', urlShortenerRouter);
 
 module.exports = app;
