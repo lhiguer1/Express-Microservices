@@ -1,4 +1,4 @@
-@baseUrl = http://localhost:3000/api/whoami
+@baseUrl = http://localhost:3000/headerparser/api/whoami
 
 ### Provide language
 GET {{baseUrl}} HTTP/1.1
